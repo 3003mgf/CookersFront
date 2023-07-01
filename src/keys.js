@@ -1,0 +1,1 @@
+export const BACK_URL = "https://cookersbackend.up.railway.app";
