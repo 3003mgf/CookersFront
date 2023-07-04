@@ -50,8 +50,8 @@ const NavBar = () => {
         </div>
       </div>
       <div className='navbar-input d-flex align-items-center position-relative'>
-        <input type="text" placeholder='Search recipes here...' disabled={window.location.href !== "http://localhost:3000/home" ? true : false} className={`position-relative`} onChange={(e)=> setInput(e.target.value)} value={input} style={{boxShadow: theme === "dark" ? "none" : "0 0 0.5rem lightgrey", backgroundColor:"white"}} onKeyDown={(e)=> e.key === "Enter" && handleRecipesByName()}/>
-        {window.location.href === "http://localhost:3000/home" && <div className='nav-bar-search position-absolute'>
+        <input type="text" placeholder='Search recipes here...' disabled={window.location.href !== "https://cookers-mgf.netlify.app/home" ? true : false} className={`position-relative`} onChange={(e)=> setInput(e.target.value)} value={input} style={{boxShadow: theme === "dark" ? "none" : "0 0 0.5rem lightgrey", backgroundColor:"white"}} onKeyDown={(e)=> e.key === "Enter" && handleRecipesByName()}/>
+        {window.location.href === "https://cookers-mgf.netlify.app/home" && <div className='nav-bar-search position-absolute'>
           <img src="/images/search.svg" alt="abc" width={25} height={25} onClick={handleRecipesByName}/>
         </div>}
       </div>
