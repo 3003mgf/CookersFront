@@ -34,6 +34,8 @@ const Pagination = () => {
         manyPages.push(i);
       };
       setPageNumbers(manyPages);
+    }else{
+      setPageNumbers([]);
     }
   }, [recipes]);
 

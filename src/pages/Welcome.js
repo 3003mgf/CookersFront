@@ -28,7 +28,7 @@ const Welcome = () => {
         </ul>
       </div>
       <div className="welcome-container">
-        <div style={{width:"60%"}} className='welcome-img'>
+        <div className='welcome-img'>
           <img src="images/chef.jpg" alt="abc" />
         </div>
         <div className='welcome-btn-div' style={{width:"40%"}}>

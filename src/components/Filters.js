@@ -85,7 +85,7 @@ const Filters = () => {
         </div>
         <div className='filters-select'>
           <select ref={refSelect} name="" id="" onChange={sortAlphabetically} defaultValue="disabled">
-            <option ref={refOption} value="disabled" disabled>Alpabetically</option>
+            <option ref={refOption} value="disabled" disabled>Alphabetically</option>
             <option value="asc">A-Z</option>
             <option value="desc">Z-A</option>
           </select>
