@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { getRecipes } from '../features/mainSlice';
 
 const Welcome = () => {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleEnter = () =>{
@@ -9,6 +12,10 @@ const Welcome = () => {
       navigate("/home");
     },500)
   };
+
+  useEffect(() => {
+    dispatch(getRecipes());
+  }, []);
 
   return ( 
     <div className='welcome-wrapper'>
